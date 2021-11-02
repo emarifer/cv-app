@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { ImageStyled } from "../components/ImageStyled";
 import { ReactComponent as Md, attributes } from "./markdown/post.md";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const MarkdownStyled = styled.div`
   h1 {

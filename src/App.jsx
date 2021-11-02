@@ -6,7 +6,8 @@ import { PostInMarkdown } from "./pages/PostInMarkdown";
 import { ButtonToTop } from "./components/ButtoToTop";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import { Navbar } from "./components/Navbar";
-import { Sidebar } from './components/Sidebar';
+import { Sidebar } from "./components/Sidebar";
+import { HelmetProvider } from "react-helmet-async";
 
 const Container = styled.div`
   padding: 6rem 2rem 2rem 2rem;
@@ -38,7 +39,7 @@ export const App = () => {
   };
 
   return (
-    <>
+    <HelmetProvider>
       <Navbar
         showSidebarMenu={showSidebarMenu}
         setShowSidebarMenu={setShowSidebarMenu}
@@ -59,6 +60,6 @@ export const App = () => {
         showSidebarMenu={showSidebarMenu}
         setShowSidebarMenu={setShowSidebarMenu}
       />
-    </>
+    </HelmetProvider>
   );
 };

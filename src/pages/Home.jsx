@@ -5,7 +5,7 @@ import { css, jsx } from "@emotion/react";
 import styled from "@emotion/styled";
 import { ButtonLink } from "../components/ButtonLink";
 import { ImageStyled } from "../components/ImageStyled";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 const Common = css`
   color: #8099c2;
