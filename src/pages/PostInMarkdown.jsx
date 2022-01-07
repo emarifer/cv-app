@@ -80,6 +80,19 @@ const MarkdownStyled = styled.div`
   }
 `;
 
+const Separator = styled.hr`
+  margin-top: 2.5rem;
+  width: 90%;
+  border: 1px solid #8099c2;
+`;
+
+const Footer = styled.footer`
+  text-align: center;
+  margin: 1rem 0;
+  color: #8099c2;
+  line-height: 1.7rem;
+`;
+
 export const PostInMarkdown = () => {
   return (
     <>
@@ -90,6 +103,8 @@ export const PostInMarkdown = () => {
       <MarkdownStyled>
         <Md />
       </MarkdownStyled>
+      <Separator />
+      <Footer>MIT Licensed | Copyright © 2022 Enrique Marín</Footer>
     </>
   );
 };

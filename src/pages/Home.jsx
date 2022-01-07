@@ -93,7 +93,7 @@ export const Home = ({ props }) => {
           </p>
         </Content>
         <Separator />
-        <Footer>MIT Licensed | Copyright © 2021 Enrique Marín</Footer>
+        <Footer>MIT Licensed | Copyright © 2022 Enrique Marín</Footer>
       </Wrapper>
     </>
   );
